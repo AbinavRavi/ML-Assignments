@@ -1,0 +1,50 @@
+
+\documentclass[5pt,a4paper]{article}
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=20mm,
+	top=20mm,
+}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\begin{document}
+	\title{Machine learning Homework- Linear regression}
+	\author{Abinav Ravi Venkatakrishnan - 03694216 and Abhijeet Parida - 0367}
+	\maketitle
+	
+	\section{Least Square Regression}
+	\subsection*{Problem 2}
+	\textbf{Given:} The error function 
+	\begin{equation}
+	E_{weighted}(w) = \frac{1}{2}\sum_{i=1}^{N}t_i[w^T \phi(x_i)-y_i]^2
+	\end{equation}
+	We know that taking the first derivative of the cost function gives the minimum of the error function.
+	\begin{equation}
+	\nabla E_{weighted}(w) = \nabla_w \frac{1}{2}\sum_{i=1}^{N}t_i[w^T \phi(x_i)-y_i]^2 = 0
+	\end{equation}
+	Now the RHS can be written as a matrix equation with T as the diagonal matrix. 
+	\begin{equation}
+	\nabla_w E_{weighted} = \nabla_w \frac{1}{2}  [\Phi^T\textbf{T}w - y]^T[\Phi^T\textbf{T}w - y]
+	\end{equation} 
+	
+	If T = I(Identity Matrix) hence giving the solution
+	\begin{equation}
+	w_* = (\Phi^T\Phi )^{-1} \Phi^T y 
+	\end{equation}
+	
+	$t_i$ acts as a multiplication factor for variance in $y_i$ due to $x_i$
+	
+	when the data points for which there are exact copies in the dataset.The error contribution due to these repeated points are increased. 
+	
+	\section{Ridge regression}
+	\subsection*{Problem 3}
+	Before Au
+	
+	
+	
+\end{document}

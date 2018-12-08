@@ -12,6 +12,7 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage{subfig}
 \begin{document}
 	\title{Machine learning Homework- Soft-Margin SVM and Kernels }
 	\author{Abinav Ravi Venkatakrishnan - 03694216 and Abhijeet Parida - 03679676}
@@ -28,11 +29,18 @@
 	case 1: when C = 0 there is no restriction on $\xi$ values.\\
 	case 2: when C < 0 it encourages higher values of $\xi$ and hence encouraging mis-classification.  
 	\section*{Problem 3:}
-	\begin{figure}[h]
-		\includegraphics[width=0.5\textwidth]{img1_f.png}
-		\caption{C = $10^10$}
+	\begin{figure}[!h]%
+		\centering
+		\subfloat[]
+		{{\includegraphics[width=6cm,height=4.5cm]{img1_f.png} }}%
+		\qquad
+		\subfloat[]
+		{{\includegraphics[width=6cm,height=4.5cm]{img2_f.png} }}%
+		\caption{}%
 	\end{figure}
+
 This case tends to have hard mergin of SVM since the C value is very big and C tends to $\infty$
+
 	
 	
 	\section*{Problem 4:}

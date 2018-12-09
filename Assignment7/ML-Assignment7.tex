@@ -49,7 +49,10 @@ The first case tends to have hard margin of SVM since the C value is very big an
 	a) The algorithm is trying to find the matching characters in the given string.\\
 	b) The alphabets are mapped from SxS space to real space. Now the SxS space has infinite dimension and gets mapped to real space. The real number is actually a mapping of s>0 which means that the transformation is a valid Kernel. 
 	\section*{Problem 7:}
-	
+	For linearly separated points the SVM is given by 
+	\begin{equation}
+	y_i(w^T \phi(x_i)+b) > 0 
+	\end{equation} this equation is transformed into a different forms by using the kernel trick for non linear separations. But this is possible only when the limit of $\sigma$ tends to zero or very low values of $\sigma$
 	
 	
 \end{document}

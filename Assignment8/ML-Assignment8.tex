@@ -49,6 +49,15 @@
 	The advantage is that it is easy to compute the gradients during backpropagation.
 	\section{ Numerical Stability}
 	\subsection*{Problem 4:}
+	\begin{eqnarray*}
+	&a+log(\sum_{i=1}^{N}e^{x_i-a})\\
+	=&a+log(\sum_{i=1}^{N}e^{x_i}e^{-a})\\
+	=&a+log(e^{-a}\sum_{i=1}^{N}e^{x_i})\\
+	=&a+log(e^{-a})+log(\sum_{i=1}^{N}e^{x_i})\\
+	=&a-a+log(\sum_{i=1}^{N}e^{x_i})\\
+	=&log(\sum_{i=1}^{N}e^{x_i})\\
+	\end{eqnarray*}
+	Hence proved the equivalence
 	
 	\subsection*{Problem 5:}
 	\subsection*{Problem 6:}

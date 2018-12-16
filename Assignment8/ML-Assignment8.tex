@@ -68,6 +68,18 @@
 	Hence proved the equivalence
 	
 	\subsection*{Problem 6:}
-	
-	
+	We can write the equivalent formulation as
+	\begin{eqnarray}
+		&x-xy+log(1+e^{-x})&\forall x>0\\
+		&xy+log(1+e^{x})&\forall x<0
+	\end{eqnarray}
+	\begin{eqnarray*}
+	&-(y log(\sigma(x))+(1-y)log(1-\sigma(x)))\\
+	&=-y log(\sigma(x))-log(1-\sigma(x))+y log(1-\sigma(x))\\
+	&=-y log(\frac{1}{1+e^{-x}})-log(1-\frac{1}{1+e^{-x}})+y log(1-\frac{1}{1+e^{-x}})\\
+	&=-y log(\frac{1}{1+e^{-x}})-log(\frac{e^{-x}}{1+e^{-x}})+ylog(\frac{e^{-x}}{1+e^{-x}})\\
+	&=-y log(\frac{1}{1+e^{-x}})+x+log(1+e^{-x})-xy-ylog(1+e^{-x})
+	&=x+log(1+e^{-x})-xy
+	\end{eqnarray*}
+	Since here x are logits and logits can never be negative so the end equation matches Eqn 1. hence it is proved.
 \end{document}
